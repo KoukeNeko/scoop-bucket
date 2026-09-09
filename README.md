@@ -8,7 +8,9 @@ An independent command-line client for [Taiga](https://taiga.io) — not affilia
 
 ```powershell
 scoop bucket add koukeneko https://github.com/KoukeNeko/scoop-bucket
-scoop install taiga
+scoop install koukeneko/taiga-cli
 ```
 
-Update with `scoop update taiga`. Uninstall with `scoop uninstall taiga`.
+The manifest is `taiga-cli` (Scoop's `extras` bucket already has an unrelated `taiga`, the anime tracker), and the bucket-qualified name avoids that clash. The installed command is `taiga`.
+
+Update with `scoop update taiga-cli`. Uninstall with `scoop uninstall taiga-cli`.
