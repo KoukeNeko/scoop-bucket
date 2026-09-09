@@ -1,0 +1,38 @@
+{
+    "version": "0.6.0",
+    "description": "Independent command-line client for Taiga",
+    "homepage": "https://github.com/KoukeNeko/taiga-cli",
+    "license": "MIT",
+    "notes": "Taiga is a trademark of its respective owners. This is an independent client, not affiliated with or endorsed by the Taiga project.",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/KoukeNeko/taiga-cli/releases/download/v0.6.0/taiga_0.6.0_windows_amd64.zip",
+            "hash": "fb03c313cc0aac40f6e9610da592d5a0c2ebdbe0c805931d5c64aeae2d91cb41",
+            "extract_dir": "taiga_0.6.0_windows_amd64"
+        },
+        "arm64": {
+            "url": "https://github.com/KoukeNeko/taiga-cli/releases/download/v0.6.0/taiga_0.6.0_windows_arm64.zip",
+            "hash": "9d0ef627cd3ece400773122eaa62a0d597ff9931f6543c0251e1d959591aed59",
+            "extract_dir": "taiga_0.6.0_windows_arm64"
+        }
+    },
+    "bin": "taiga.exe",
+    "checkver": {
+        "github": "https://github.com/KoukeNeko/taiga-cli"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/KoukeNeko/taiga-cli/releases/download/v$version/taiga_$version_windows_amd64.zip",
+                "extract_dir": "taiga_$version_windows_amd64"
+            },
+            "arm64": {
+                "url": "https://github.com/KoukeNeko/taiga-cli/releases/download/v$version/taiga_$version_windows_arm64.zip",
+                "extract_dir": "taiga_$version_windows_arm64"
+            }
+        },
+        "hash": {
+            "url": "https://github.com/KoukeNeko/taiga-cli/releases/download/v$version/SHA256SUMS"
+        }
+    }
+}
