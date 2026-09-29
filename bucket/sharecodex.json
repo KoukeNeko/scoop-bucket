@@ -1,15 +1,15 @@
 {
-    "version": "0.3.17",
+    "version": "0.3.18",
     "description": "Track shared Claude Code and Codex subscription quota",
     "homepage": "https://github.com/KoukeNeko/ShareCodex",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/KoukeNeko/ShareCodex/releases/download/v0.3.17/ShareCodex-windows-amd64.zip",
-            "hash": "21e90153578793bef7e753ce977ff0a2e1c9ea2a86d0b765eacb9fd563c75024"
+            "url": "https://github.com/KoukeNeko/ShareCodex/releases/download/v0.3.18/ShareCodex-windows-amd64.zip",
+            "hash": "232f906b6f15be272ec82a014c25fb847889f2f28836cea86d3723a4da13559d"
         },
         "arm64": {
-            "url": "https://github.com/KoukeNeko/ShareCodex/releases/download/v0.3.17/ShareCodex-windows-arm64.zip",
-            "hash": "77f7c57787c191d08578da6c14c03b447d252054fecb52b4e2c6e902775c9464"
+            "url": "https://github.com/KoukeNeko/ShareCodex/releases/download/v0.3.18/ShareCodex-windows-arm64.zip",
+            "hash": "34ea2f7221624ee9c66baf2f58e915f4d2ce4f1462c69ff4f2af2c7c9b93032b"
         }
     },
     "shortcuts": [
