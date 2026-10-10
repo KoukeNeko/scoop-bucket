@@ -1,0 +1,43 @@
+{
+    "version": "0.6.0",
+    "description": "Run several OpenVPN and WireGuard VPNs at once",
+    "homepage": "https://github.com/KoukeNeko/Plaitway",
+    "license": "MIT",
+    "notes": [
+        "Installing and removing ask Windows for administrator rights, because the package registers the service PlaitwayHelper.",
+        "The command line client is C:\\Program Files\\Plaitway\\plaitway.exe. Removing Plaitway keeps %ProgramData%\\Plaitway, which holds the profiles."
+    ],
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/KoukeNeko/Plaitway/releases/download/v0.6.0/Plaitway-0.6.0-x64-en-US.msi#/Plaitway.dl",
+            "hash": "7083969e4d7b87a56ba07ba3e9f51bfc61a7b613c2f21436d10bfb77cd7dbbb9"
+        }
+    },
+    "installer": {
+        "script": [
+            "$msi = \"$dir\\Plaitway.msi\"",
+            "Move-Item \"$dir\\Plaitway.dl\" $msi",
+            "$run = Start-Process msiexec.exe -ArgumentList \"/i `\"$msi`\" /qb\" -Verb RunAs -Wait -PassThru",
+            "if ($run.ExitCode -notin 0, 3010) { throw \"The Plaitway installer failed with exit code $($run.ExitCode).\" }"
+        ]
+    },
+    "uninstaller": {
+        "script": [
+            "$run = Start-Process msiexec.exe -ArgumentList \"/x `\"$dir\\Plaitway.msi`\" /qb\" -Verb RunAs -Wait -PassThru",
+            "if ($run.ExitCode -notin 0, 1605, 3010) { throw \"The Plaitway uninstaller failed with exit code $($run.ExitCode).\" }"
+        ]
+    },
+    "checkver": {
+        "github": "https://github.com/KoukeNeko/Plaitway"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/KoukeNeko/Plaitway/releases/download/v$version/Plaitway-$version-x64-en-US.msi#/Plaitway.dl"
+            }
+        },
+        "hash": {
+            "url": "https://github.com/KoukeNeko/Plaitway/releases/download/v$version/SHA256SUMS-windows"
+        }
+    }
+}
