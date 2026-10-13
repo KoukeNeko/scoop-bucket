@@ -1,16 +1,16 @@
 {
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Independent Moodle command-line client for learners, educators, and administrators",
   "homepage": "https://github.com/KoukeNeko/Moodle-CLI",
   "license": "MIT",
   "architecture": {
     "64bit": {
-      "url": "https://github.com/KoukeNeko/Moodle-CLI/releases/download/v0.3.0/moodle-cli_0.3.0_windows_amd64.zip",
-      "hash": "fda6c24dcfe4a98702e2e2d7136e016713447b5fad73aaa16da974ec0c0bc242"
+      "url": "https://github.com/KoukeNeko/Moodle-CLI/releases/download/v0.4.0/moodle-cli_0.4.0_windows_amd64.zip",
+      "hash": "49c0e0842299437da92961d43d984d61ef5bf7051b55da319629ccc01de37685"
     },
     "arm64": {
-      "url": "https://github.com/KoukeNeko/Moodle-CLI/releases/download/v0.3.0/moodle-cli_0.3.0_windows_arm64.zip",
-      "hash": "2714b307e3e1e652ef9e2c0a7ac565f78ce433556db27eb3637282d5db4200ad"
+      "url": "https://github.com/KoukeNeko/Moodle-CLI/releases/download/v0.4.0/moodle-cli_0.4.0_windows_arm64.zip",
+      "hash": "6f50b11e59af1f4ea1d52b1561f72d0ed5161a0b59d321e499272b6e34526509"
     }
   },
   "bin": "moodle.exe",
