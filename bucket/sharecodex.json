@@ -1,17 +1,19 @@
 {
-    "version": "0.3.63",
+    "version": "0.3.64",
     "description": "Track shared Claude Code and Codex subscription quota",
     "homepage": "https://github.com/KoukeNeko/ShareCodex",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/KoukeNeko/ShareCodex/releases/download/v0.3.63/ShareCodex-windows-amd64.zip",
-            "hash": "d10daed8ae29d8b60c3ccb7ceae7bd7d78de83d17effc36912783832afddc180"
+            "url": "https://github.com/KoukeNeko/ShareCodex/releases/download/v0.3.64/ShareCodex-windows-amd64.zip",
+            "hash": "c560c6fe90883d2764af4f92b04a84ef158529fe45cf6f436ff1d98619fde7a3"
         },
         "arm64": {
-            "url": "https://github.com/KoukeNeko/ShareCodex/releases/download/v0.3.63/ShareCodex-windows-arm64.zip",
-            "hash": "8599fd7ea31c72eba84b5cc627854fb6d0b9e0a92fe22b69927235e7f205f77a"
+            "url": "https://github.com/KoukeNeko/ShareCodex/releases/download/v0.3.64/ShareCodex-windows-arm64.zip",
+            "hash": "bf332a9d5f62438382de0abcdf476677a76e22b9cab7d886312691561b1284ac"
         }
     },
+    "pre_install": "Get-Process ShareCodex -ErrorAction SilentlyContinue | Stop-Process -Force -PassThru | Wait-Process",
+    "pre_uninstall": "Get-Process ShareCodex -ErrorAction SilentlyContinue | Stop-Process -Force -PassThru | Wait-Process",
     "shortcuts": [
         [
             "ShareCodex.exe",
