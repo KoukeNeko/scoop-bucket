@@ -1,0 +1,28 @@
+{
+  "version": "0.1.3-pre",
+  "description": "A lightweight, real-time Windows system monitor that lives in your tray",
+  "homepage": "https://github.com/KoukeNeko/WinState",
+  "notes": [
+    "WinState asks for administrator rights when it starts.",
+    "CPU temperature, voltage and package power need the PawnIO driver: winget install -e --id namazso.PawnIO"
+  ],
+  "architecture": {
+    "64bit": {
+      "url": "https://github.com/KoukeNeko/WinState/releases/download/v0.1.3-pre/WinState-win-x64.exe#/WinState.exe",
+      "hash": "ed6fdc08a06369b3e0fac1eec69d074d7ff1f9e610b7fa7064ec33b32d1b28a6"
+    },
+    "arm64": {
+      "url": "https://github.com/KoukeNeko/WinState/releases/download/v0.1.3-pre/WinState-win-arm64.exe#/WinState.exe",
+      "hash": "3061deb24f821c171a4cd0db437cfb70ac72d5ac4bf34ec6192344aac656db70"
+    }
+  },
+  "bin": "WinState.exe",
+  "shortcuts": [
+    [
+      "WinState.exe",
+      "WinState"
+    ]
+  ],
+  "pre_install": "Get-Process WinState -ErrorAction SilentlyContinue | Stop-Process -Force -PassThru | Wait-Process",
+  "pre_uninstall": "Get-Process WinState -ErrorAction SilentlyContinue | Stop-Process -Force -PassThru | Wait-Process"
+}
