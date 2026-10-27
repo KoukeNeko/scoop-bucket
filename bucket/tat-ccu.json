@@ -1,15 +1,15 @@
 {
-    "version": "0.1.12",
+    "version": "0.1.13",
     "description": "Timetable, eCourse2 and campus services of National Chung Cheng University",
     "homepage": "https://github.com/KoukeNeko/TAT-CCU",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/KoukeNeko/TAT-CCU/releases/download/v0.1.12/TAT-CCU-0.1.12-windows-x64.zip",
-            "hash": "413486360ceb1866a117d06afd838a3c7bfa52f631f01a70e2497283e20e2ddb"
+            "url": "https://github.com/KoukeNeko/TAT-CCU/releases/download/v0.1.13/TAT-CCU-0.1.13-windows-x64.zip",
+            "hash": "8da0fd5cf5c003a4b9109ed427222979c99eacebec408d05b09a48ec8bf3be01"
         },
         "arm64": {
-            "url": "https://github.com/KoukeNeko/TAT-CCU/releases/download/v0.1.12/TAT-CCU-0.1.12-windows-arm64.zip",
-            "hash": "08e8bcd23a80fd6af922be80de773c44c33f0c7ca16c33f00bbf0cdb4cc239e1"
+            "url": "https://github.com/KoukeNeko/TAT-CCU/releases/download/v0.1.13/TAT-CCU-0.1.13-windows-arm64.zip",
+            "hash": "12a270575f0c685b93d0779e070547a068c9e6947d35d55f364b46ead69da957"
         }
     },
     "shortcuts": [
