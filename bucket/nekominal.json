@@ -1,16 +1,16 @@
 {
-    "version": "0.2.27",
+    "version": "0.2.28",
     "description": "A Windows terminal in Rust for coding agents: Claude Code, including its full-screen mode, runs in it",
     "homepage": "https://github.com/KoukeNeko/scoop-bucket#nekominal",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/KoukeNeko/scoop-bucket/releases/download/nekominal-v0.2.27/Nekominal-0.2.27-windows-x64.zip",
-            "hash": "4cc05f07c8082de57132979c1a1600733f15c4a2b9a0b476657eefbcf83a6a42"
+            "url": "https://github.com/KoukeNeko/scoop-bucket/releases/download/nekominal-v0.2.28/Nekominal-0.2.28-windows-x64.zip",
+            "hash": "bc81823be3a605246c9d677cb3774f45379ac0146c2fbf122b5cf55604632cca"
         },
         "arm64": {
-            "url": "https://github.com/KoukeNeko/scoop-bucket/releases/download/nekominal-v0.2.27/Nekominal-0.2.27-windows-arm64.zip",
-            "hash": "dfc2179e758c59db06f8771280e30b462fdaac1cf247d0288c7dfa8e55c34684"
+            "url": "https://github.com/KoukeNeko/scoop-bucket/releases/download/nekominal-v0.2.28/Nekominal-0.2.28-windows-arm64.zip",
+            "hash": "2f5a03b833539c1b6b1b8b7e9e3a3900139b9f3a5172b385ae94c898ed01c81c"
         }
     },
     "env_add_path": ".",
