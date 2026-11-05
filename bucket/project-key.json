@@ -1,0 +1,35 @@
+{
+  "version": "0.1.0",
+  "description": "Zhuyin input method",
+  "homepage": "https://github.com/KoukeNeko/Project-Key",
+  "license": "MIT",
+  "notes": [
+    "Installing and removing ask Windows for administrator rights: the input method is installed into C:\\Program Files\\Project Key and registered there.",
+    "Add Project Key in Settings > Time & language > Language & region."
+  ],
+  "architecture": {
+    "64bit": {
+      "url": "https://github.com/KoukeNeko/Project-Key/releases/download/v0.1.0/ProjectKey-0.1.0-windows-x64.zip",
+      "hash": "28555992fe409670fc0f407636f8a412bf96b962aeeb3cc2065d63ea9c1b3330"
+    }
+  },
+  "installer": {
+    "script": "& \"$dir\\install.ps1\" -Source $dir"
+  },
+  "uninstaller": {
+    "script": "if ($cmd -eq \"uninstall\") { & \"$dir\\uninstall.ps1\" }"
+  },
+  "checkver": {
+    "github": "https://github.com/KoukeNeko/Project-Key"
+  },
+  "autoupdate": {
+    "architecture": {
+      "64bit": {
+        "url": "https://github.com/KoukeNeko/Project-Key/releases/download/v$version/ProjectKey-$version-windows-x64.zip"
+      }
+    },
+    "hash": {
+      "url": "https://github.com/KoukeNeko/Project-Key/releases/download/v$version/SHA256SUMS"
+    }
+  }
+}
