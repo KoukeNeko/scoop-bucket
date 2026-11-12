@@ -1,5 +1,5 @@
 {
-    "version": "0.9.0",
+    "version": "0.10.0",
     "description": "Run several OpenVPN and WireGuard VPNs at once",
     "homepage": "https://github.com/KoukeNeko/Plaitway",
     "license": "MIT",
@@ -9,8 +9,8 @@
     ],
     "architecture": {
         "64bit": {
-            "url": "https://github.com/KoukeNeko/Plaitway/releases/download/v0.9.0/Plaitway-0.9.0-x64.msi#/Plaitway.dl",
-            "hash": "df3506689a7deb9496b9a76c6583f0aef4264da5d2a29c1b67cc8a88b5f67cde"
+            "url": "https://github.com/KoukeNeko/Plaitway/releases/download/v0.10.0/Plaitway-0.10.0-x64.msi#/Plaitway.dl",
+            "hash": "306c71c61a707629c1d1f7cb8c3927a1ed82b0ef62c3e7f038a7b7237383a181"
         }
     },
     "installer": {
