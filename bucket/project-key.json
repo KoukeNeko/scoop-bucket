@@ -1,5 +1,5 @@
 {
-  "version": "0.9.3",
+  "version": "0.10.0",
   "description": "Zhuyin input method",
   "homepage": "https://github.com/KoukeNeko/Project-Key",
   "license": "MIT",
@@ -9,8 +9,8 @@
   ],
   "architecture": {
     "64bit": {
-      "url": "https://github.com/KoukeNeko/Project-Key/releases/download/v0.9.3/ProjectKey-0.9.3-windows-x64.zip",
-      "hash": "57df6a9a022317df073ddd17b310fd7f67bea7b94d6d18b77722e64ab6c3ca3b"
+      "url": "https://github.com/KoukeNeko/Project-Key/releases/download/v0.10.0/ProjectKey-0.10.0-windows-x64.zip",
+      "hash": "43bb00cc160fa49094de5eb54ff4278a9d4ce3b9975dfe56afbcbd77ae09092c"
     }
   },
   "installer": {
