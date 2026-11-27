@@ -10,7 +10,11 @@
   "architecture": {
     "64bit": {
       "url": "https://github.com/KoukeNeko/Project-Key/releases/download/v0.12.2/ProjectKey-0.12.2-windows-x64.zip",
-      "hash": "55579b10eb7011b761f67d21f3101edd01c8fd2a2467273504f2c46c5349e24b"
+      "hash": "7f71238a8c3b2c2db085e3283cd1778d249e92039f876f6762b7747236a3b9fc"
+    },
+    "arm64": {
+      "url": "https://github.com/KoukeNeko/Project-Key/releases/download/v0.12.2/ProjectKey-0.12.2-windows-arm64.zip",
+      "hash": "0322313ac9782797a2baa6c37eecd0003be847dc6b3560803698360317b9e1cb"
     }
   },
   "installer": {
@@ -26,6 +30,9 @@
     "architecture": {
       "64bit": {
         "url": "https://github.com/KoukeNeko/Project-Key/releases/download/v$version/ProjectKey-$version-windows-x64.zip"
+      },
+      "arm64": {
+        "url": "https://github.com/KoukeNeko/Project-Key/releases/download/v$version/ProjectKey-$version-windows-arm64.zip"
       }
     },
     "hash": {
